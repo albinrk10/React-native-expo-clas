@@ -9,6 +9,43 @@
 
 Esta guía reúne las instalaciones recomendadas para el curso de React Native con Expo. La idea es que cada alumno pueda seguir los pasos en orden, verificar que todo quedó listo y evitar errores comunes desde el inicio.
 
+## Semana 3: proyectos del repositorio
+
+En la Semana 3 se trabajará con los siguientes tres proyectos independientes.
+Cada uno tiene su propio
+`package.json`, por lo que las dependencias deben instalarse y los comandos
+deben ejecutarse dentro de la carpeta del proyecto correspondiente.
+
+| Proyecto | Descripción | Tecnologías y conceptos |
+| --- | --- | --- |
+| [`my-expo-app`](./my-expo-app) | Aplicación inicial para practicar la estructura básica de una aplicación Expo y mostrar una pantalla de bienvenida. | Expo, React Native, TypeScript y NativeWind |
+| [`contador-app`](./contador-app) | Aplicación de contador con botones para sumar y restar clics. Muestra una alerta al llegar a 10 clics y organiza la pantalla en componentes de presentación. | Expo Router, TypeScript y componentes reutilizables |
+| [`first-nav`](./first-nav) | Proyecto base para practicar navegación y la organización de pantallas con rutas basadas en archivos. | Expo Router, TypeScript y NativeWind |
+
+### Cómo ejecutar cualquiera de los proyectos
+
+Desde la raíz del repositorio, entra primero a la carpeta del proyecto que
+quieras utilizar:
+
+```bash
+cd my-expo-app
+npm install
+npm start
+```
+
+Para ejecutar otro proyecto, reemplaza `my-expo-app` por `contador-app` o
+`first-nav`. También puedes iniciar directamente una plataforma específica:
+
+```bash
+npm run android
+npm run ios
+npm run web
+```
+
+`ios` requiere macOS con Xcode. En Windows puedes utilizar Android Studio,
+Expo Go o la versión web. Para volver a trabajar con otro proyecto, detén el
+servidor actual y ejecuta los comandos desde su propia carpeta.
+
 ## Antes de empezar
 
 1. Verifica que tu computadora tenga conexión a internet estable.
