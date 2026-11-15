@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "demo-sqlite-basico-maqueta-alumnos",
+    "slug": "demo-sqlite-basico-maqueta-alumnos",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "demosqlitebasicoalumnos",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-splash-screen",
+      "expo-status-bar",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
