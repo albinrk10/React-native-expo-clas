@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "demo-photo-notes-persistencia-maqueta-alumnos",
+    "slug": "demo-photo-notes-persistencia-maqueta-alumnos",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "demophotonotesalumnos",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.albin.semana10photonotesalumnos"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite seleccionar fotos para registrar evidencias.",
+          "cameraPermission": "Permite usar la cámara para tomar evidencias."
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

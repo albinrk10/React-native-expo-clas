@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "demo-device-build-maqueta-alumnos",
+    "slug": "demo-device-build-maqueta-alumnos",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "demodevicebuildalumnos",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite seleccionar fotos para registrar evidencias.",
+          "cameraPermission": "Permite usar la cámara para tomar evidencias."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permite usar tu ubicación para registrar la posición de la evidencia."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
